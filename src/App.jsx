@@ -1,16 +1,16 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import HomePage from './HomePage';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import HomePage from './HomePage'; 
 import StudentDetailsPage from './StudentDetailsPage';
 import UserProfilePage from './UserProfilePage';
-import Navbar from './Navbar';
+import NavBar from './NavBar';
 
-function App() {
+function App(){
   return (
     <div>
-      <Navbar />
+      <NavBar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} /> {'./HomePage'}
         <Route path="/students/:studentId" element={<StudentDetailsPage />} />
         <Route path="/profile" element={<UserProfilePage />} />
       </Routes>
